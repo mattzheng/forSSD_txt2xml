@@ -13,6 +13,6 @@
  - 4、报错内容的图像ID会输出成list文件：wrong_list
 
 
-样例在example之中可以看到，需要两个文件夹：JPEGImages（存放照片）、label（每张照片一个label）生成第三个文件夹：Annotations
+样例在example之中可以看到，需要前两个文件夹：JPEGImages（存放照片）、label（每张照片一个label）生成第三个文件夹：Annotations
 
 Matt/2017-5-4
