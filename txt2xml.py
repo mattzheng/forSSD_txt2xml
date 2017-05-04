@@ -10,10 +10,10 @@ from itertools import islice
 from xml.dom.minidom import Document
 
 # Path
-labels='G:\\DeepLearningForTraining\\TXT2Xml\\label'
-imgpath='G:\\DeepLearningForTraining\\TXT2Xml\\JPEGImages/'
-xmlpath_new='G:\\DeepLearningForTraining\\TXT2Xml\\Annotations/'
-foldername='VOC2007'
+labels='/../label'                      # matt
+imgpath='/../JPEGImages/'                      # matt
+xmlpath_new='/../Annotations/'                     # matt
+foldername='VOC2007'                     # matt
 
 # function1
 def insertObject(doc, datas):
@@ -72,7 +72,7 @@ def main():
 #                    continue
                 if 5 != len(datas):
                     wrong_list.append(each)
-                    # 检验一行，是否为5个元素，不是则报错
+                    # 检验一行，是否为5个元素，不是则跳过
                     pass
                 pictureName = each.replace('.txt', '.jpg')
                 imageFile = imgpath + pictureName
