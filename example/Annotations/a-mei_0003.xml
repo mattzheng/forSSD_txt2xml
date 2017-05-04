@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+<annotation>
+    <folder>VOC2007</folder>
+    <filename>a-mei_0003.jpg</filename>
+    <source>
+        <database>My Database</database>
+        <annotation>VOC2007</annotation>
+        <image>flickr</image>
+        <flickrid>NULL</flickrid>
+    </source>
+    <owner>
+        <flickrid>NULL</flickrid>
+        <name>matt</name>
+    </owner>
+    <size>
+        <width>500</width>
+        <height>753</height>
+        <depth>3</depth>
+    </size>
+    <segmented>0</segmented>
+    <object>
+        <name>people</name>
+        <pose>Unspecified</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>114.8989</xmin>
+            <ymin>87.6071</ymin>
+            <xmax>243.9012</xmax>
+            <ymax>228.8628</ymax>
+        </bndbox>
+    </object>
+</annotation>
