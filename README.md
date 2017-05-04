@@ -21,5 +21,7 @@ classname x2min y2min x2max y2max
 
 具体样例在example之中可以看到，需要前两个文件夹：JPEGImages（存放照片）、label（每张照片一个label）生成第三个文件夹：Annotations
 
+代码中，需要修改的部分已经用#matt标识。
+
 Matt/2017-5-4
 本人博客:http://blog.csdn.net/sinat_26917383/article/details/68068113
