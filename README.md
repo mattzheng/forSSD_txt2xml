@@ -54,3 +54,44 @@ for oid in tqdm(list(only_id)):
 
 Matt/2017-5-4
 本人博客:http://blog.csdn.net/sinat_26917383/article/details/68068113
+
+### 延伸一：PASCAL VOC Writer专门生成VOC XML格式的库
+Labelbox/pascal-voc-writer地址：https://github.com/Labelbox/pascal-voc-writer
+
+```
+import os
+from pascal_voc_writer import Writer as PascalWriter
+pascal_writer = PascalWriter('/mnt/labelbox/007.jpg', 134, 135)
+pascal_writer.addObject(name='person', xy_coords=[1, 2,3, 4])
+pascal_writer.save('/mnt/labelbox/007.xml')
+```
+
+生成的格式为：
+```
+<annotation>
+    <folder>labelbox</folder>
+    <filename>007.jpg</filename>
+    <path>/mnt/labelbox/007.jpg</path>
+    <source>
+        <database>Unknown</database>
+    </source>
+    <size>
+        <width>134</width>
+        <height>135</height>
+        <depth>3</depth>
+    </size>
+    <segmented>0</segmented>
+    <object>
+        <name>person</name>
+        <pose>Unspecified</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <polygon>
+            <x1>1</x1>
+                <y1>2</y1>
+            <x2>3</x2>
+                <y2>4</y2>
+            </polygon>
+        </object>
+    </annotation>
+```
